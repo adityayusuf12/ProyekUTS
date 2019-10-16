@@ -6,47 +6,17 @@
     android:layout_height="match_parent"
     tools:context=".DolarActivity">
 
-    <EditText
-        android:id="@+id/indonesia_inpt"
-        android:layout_width="172dp"
-        android:layout_height="34dp"
-        android:layout_marginStart="5dp"
-        android:layout_marginTop="112dp"
-        android:ems="10"
-        android:inputType="numberPassword"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/dolar_inpt"
-        android:layout_width="172dp"
-        android:layout_height="34dp"
-        android:layout_marginEnd="5dp"
-        android:layout_marginTop="112dp"
-        android:ems="10"
-        android:inputType="numberPassword"
+    <TextView
+        android:id="@+id/TV_output"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="48dp"
+        android:layout_marginTop="124dp"
+        android:background="#ffff"
+        android:text="Hasil Konversi"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textRupiah"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="72dp"
-        android:layout_marginTop="26dp"
-        android:text="Rupiah"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/indonesia_inpt" />
-
-    <TextView
-        android:id="@+id/textDolar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="76dp"
-        android:layout_marginTop="26dp"
-        android:text="Dolar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/dolar_inpt" />
 
     <Button
         android:id="@+id/button_convert"
@@ -59,4 +29,24 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/rupiah_inpt"
+        android:layout_width="160dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="112dp"
+        android:hint="0 Rp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="165dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
