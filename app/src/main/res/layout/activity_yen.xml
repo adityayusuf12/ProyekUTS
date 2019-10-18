@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".YenActivity">
+    tools:context=".YenActivity"
+    >
 
 
     <Button
@@ -17,7 +18,8 @@
         android:text="Convert"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        />
 
     <EditText
         android:id="@+id/rupiah_inpt"
@@ -29,7 +31,8 @@
         android:hint="0 Rp"
         android:inputType="number"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        />
 
     <TextView
         android:id="@+id/TV_output"
@@ -37,7 +40,6 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="48dp"
         android:layout_marginTop="124dp"
-        android:background="#ffff"
         android:paddingLeft="10dp"
         android:text="Hasil Konversi"
         android:textSize="18sp"
