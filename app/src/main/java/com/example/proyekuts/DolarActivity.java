@@ -23,9 +23,10 @@ public class DolarActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dolar);
 
-        edit_angka = (EditText) findViewById(R.id.rupiah_inpt);
-        convert = (Button) findViewById(R.id.button_convert);
-        hasil = (TextView) findViewById(R.id.TV_output);
+        edit_angka =  findViewById(R.id.rupiah_inpt);
+        convert =  findViewById(R.id.button_convert);
+        hasil =  findViewById(R.id.TV_output);
+
 
 
 
@@ -33,7 +34,9 @@ public class DolarActivity extends AppCompatActivity {
 
     public void Convert(View view) {
 
-        double hasildlr= angka * 14150;
-        hasil. setText("$"+hasildlr);
+        String getAngka = edit_angka.getText().toString();
+        double angs = Double.parseDouble(getAngka);
+        double hasildlr = angs * 14150;
+        hasil.setText("$" + hasildlr);
     }
 }
