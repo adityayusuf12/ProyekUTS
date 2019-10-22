@@ -19,13 +19,13 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/rupiah_inpt"
+        android:id="@+id/euro_inpt"
         android:layout_width="160dp"
         android:layout_height="45dp"
         android:layout_marginStart="5dp"
         android:layout_marginTop="112dp"
         android:ems="10"
-        android:hint="0 Rp"
+        android:hint="€ 0"
         android:inputType="number"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
